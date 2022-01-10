@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media(min-width:1040.1px) {
+    
+  /* header */
+
+    #header {
+        width: 100%;
+        height: 120px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 800;
+    }
+    #header .nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+    #header .logo {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #header .nav-menu {    
+        display: flex;
+        width: 50%;
+    }
+    #header .nav-menu li {
+        display: block;
+        line-height: 30px;
+        margin: auto;
+    }
+    #header .nav-menu li a {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    #check {
+        display: none;
+    }
+    #header .bar-btn {
+        display: none;
+    }
+
+    /* section */
+
+
+    #section {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(146, 27, 27);
+        display: flex;
+        position: sticky;          
+    }
+    #section .section__div {
+        height: 100%;
+        width: 100%;
+        display: flex;          
+    }
+    #section .section__titulo {
+        width: 60%;
+        height: 20%;
+        text-align: right;
+    }
+    #section .section__titulo h2 {
+    /*         width: 100%;
+        height: auto; */
+    }
+    #section .section__img {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    #section .section__img img {
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+    #section .section__texto {
+        width: 50%;
+        height: 100%;
+    }
+    #section .section__texto h2 {
+        text-align: center;
+        padding-top: 45px;
+        font-size: 40px;
+    }
+    #section .section__texto p {
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+
+
+
+}
+@media(max-width:1040px) {
+    
+    #header {
+        width: 100%;
+        height: 120px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 800;
+    }
+    #header .nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+    #header .logo {
+        margin-left: 20px;
+        margin-top: 10px;    
+    }
+    #header .bar-btn {
+        font-size: 25px;
+        color: #fff;
+        margin-right: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    #header .nav-menu {    
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 118px;
+        background: rgba(0, 0, 0, 0.912);
+        text-align: center;
+        transition: all .05s;
+    }
+    #header .nav-menu li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+    #header .nav-menu li a {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    #check {
+        display: none;
+    }
+    #check:checked ~ .nav-menu {
+        height: 369px;
+    }
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+
+
+
+    #section {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(146, 27, 27);
+        display: flex;
+        position: sticky;          
+    }
+    #section .section__div {
+        height: 100%;
+        width: 100%;
+        display: flex;          
+    }
+    #section .section__titulo {
+        width: 60%;
+        height: 20%;
+        text-align: right;
+    }
+    #section .section__titulo h2 {
+    /*         width: 100%;
+        height: auto; */
+    }
+    #section .section__img {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    #section .section__img img {
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+    #section .section__texto {
+        width: 50%;
+        height: 100%;
+    }
+    #section .section__texto h2 {
+        text-align: center;
+        padding-top: 45px;
+        font-size: 40px;
+    }
+    #section .section__texto p {
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+ 
+}
