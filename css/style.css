@@ -228,6 +228,16 @@
     text-align: center;
     align-items: center;
 }
+/*FOOTER */
+
+#pie-pagina {
+    width: 100%;
+    background;
+}
+
+
+
+
 @media(max-width:1040px) {
 #header .header__menu {
     display: none;
