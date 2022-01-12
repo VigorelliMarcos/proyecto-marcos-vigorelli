@@ -168,7 +168,96 @@
 
     /* comunicacion */
 
-    #formulario{
+    #formulario {
+        width: 100%;
+        background: rgb(125, 158, 132);
+    }
+    #formulario .grupo-1_form {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 45px 0px;
+    }
+    #formulario .grupo-1_form .box-form-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #formulario__mapa{
+        width: 70%;
+        height: 100%;
+    }
+    #formulario .grupo-1_form .box-form h2{
+        color: rgb(0, 0, 0);
+        margin-bottom: 25px;
+        text-align: center;    
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner {
+        width: 100%;
+        background-color: rgb(125, 158, 132);
+        text-align: center;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas {
+        display: inline-block;
+        background-color: rgb(255, 230, 168);
+        width: 354px;
+        height: 415px;
+        border-radius: 15px;
+        padding-top: 2%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div input{
+        border-style: none;
+        border-bottom: 1px solid black;
+        width: 90%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div textarea{
+        resize: none;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones{
+        border: 1px solid rgb(125, 158, 132);
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        border-style: none;
+        text-align: center;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input{
+        width: 50%;
+        transition: all 300ms ease;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input:hover{
+        background-color: rgb(125, 158, 132);  
+    }
+
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 26px;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono  {
+        width: 75%;
+        height: 100%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+/*     #formulario{
         width: 100%;
         margin: auto;
         padding: 40px;
@@ -227,7 +316,7 @@
         margin-left: 100px;
         font-size: 20px;
         float: left;
-    }
+    } */
 
 
     /* QUIENES SOMOS */
@@ -492,76 +581,91 @@
 
 
 
-
-        #trabajo .trabajo__img2 img {
-            width: 250px;
-        }
-
-
-
-
         /* comunicacion */
 
-        #formulario{
+        #formulario {
+            width: 100%;
+            background: rgb(125, 158, 132);
+        }
+        #formulario .grupo-1_form {
             width: 100%;
             margin: auto;
-            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 45px 0px;
+        }
+        #formulario .grupo-1_form .box-form-2 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #formulario__mapa{
+            width: 70%;
+            height: 100%;
+        }
+        #formulario .grupo-1_form .box-form h2{
+            color: rgb(0, 0, 0);
+            margin-bottom: 25px;
+            text-align: center;    
+        }
+        #formulario .grupo-1_form .box-form .formulario__conteiner {
+            width: 100%;
             background-color: rgb(125, 158, 132);
-            height: 1300px;
+            text-align: center;
         }
-        #formulario .formulario__titulo{
-            margin-top: 20px;
-            margin-left: 50px;
-            font-size: 25px;
-        }
-        #formulario .formulario__preguntas{
-            position:relative;
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas {
+            display: inline-block;
             background-color: rgb(255, 230, 168);
-            width: 275px;
-            height: 350px;
+            width: 300px;
+            height: 415px;
             border-radius: 15px;
-            box-shadow: rgb(125, 158, 132);
-
+            padding-top: 2%;
         }
-        #formulario .formulario__preguntas div{
-            margin-top: 2.5%;
-            margin-left: 3%;
-            font-size: 16px;
-        }
-        #formulario .formulario__preguntas div input{
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div input{
             border-style: none;
             border-bottom: 1px solid black;
+            width: 90%;
         }
-        #formulario .formulario__preguntas .botones{
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div textarea{
+            resize: none;
+        }
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones{
             border: 1px solid rgb(125, 158, 132);
-            width: 170px;
+            width: 100%;
             height: 30px;
             font-size: 16px;
             border-radius: 4px;
             border-style: none;
-            margin-left: 3%;
+            text-align: center;
         }
-        #formulario .formulario__preguntas .botones button{
-            width: 73px;
-            height: 30px;
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input{
+            width: 50%;
+            transition: all 300ms ease;
         }
-        #formulario .formulario__preguntas .botones button:hover{
+        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input:hover{
             background-color: rgb(125, 158, 132);  
         }
-        #formulario__mapa{
-            width: 500px;
-            height: 450px;
-            float: right;
-            margin-top: -50px;
-            margin-right: 0px;
+    
+        #formulario .grupo-1_form .box-form .formulario__conteiner-2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 26px;
         }
-        #formulario .formulario__telefono{
-            margin-top: 10px;
-            margin-left: 100px;
+        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono  {
+            width: 75%;
+            height: 100%;
+        }
+        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono p{
+            text-align: center;
             font-size: 20px;
-            float: left;
         }
-
     
  
 
