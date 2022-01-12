@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
    
 }
 
@@ -64,7 +65,7 @@
     #section {
         width: 100%;
         height: 400px;
-        background-color: rgb(146, 27, 27);
+        background-color: rgb(125, 158, 132);
         display: flex;
         position: sticky;          
     }
@@ -111,17 +112,134 @@
         font-size: 30px;
     }
 
+
+    /* trabajo */
+
+
+    #trabajo {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(255, 230, 168);
+        display: flex;
+        position: sticky;          
+    }
+    #trabajo .trabajo__div2 {
+        height: 100%;
+        width: 100%;
+        display: flex;          
+    }
+    #trabajo .section__titulo {
+        width: 60%;
+        height: 20%;
+        text-align: right;
+    }
+    #trabajo .section__titulo h2 {
+    /*         width: 100%;
+        height: auto; */
+    }
+    #trabajo .trabajo__img2 {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        text-align: right;
+        align-items: center;
+    }
+    #trabajo .trabajo__img2 img {
+        width: 400px;
+        height: auto;
+        margin: auto;
+    }
+    #trabajo .trabajo__lista {
+        width: 50%;
+        height: 100%;
+    }
+    #trabajo .trabajo__lista h2 {
+        text-align: center;
+        padding-top: 45px;
+        font-size: 40px;
+    }
+    #trabajo .trabajo__lista p {
+        text-align: left;
+        padding-top: 15px;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    /* comunicacion */
+
+    #formulario{
+        width: 100%;
+        margin: auto;
+        padding: 40px;
+        background-color: rgb(125, 158, 132);
+        height: 600px;
+    }
+    #formulario .formulario__titulo{
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+    #formulario .formulario__preguntas{
+        position:relative;
+        background-color: rgb(255, 230, 168);
+        width: 420px;
+        height: 350px;
+        border-radius: 15px;
+        margin-left: 100px;
+        box-shadow: rgb(125, 158, 132);
+        float: left;
+    }
+    #formulario .formulario__preguntas div{
+        margin-top: 2.5%;
+        margin-left: 3%;
+        font-size: 16px;
+    }
+    #formulario .formulario__preguntas div input{
+        border-style: none;
+        border-bottom: 1px solid black;
+    }
+    #formulario .formulario__preguntas .botones{
+        border: 1px solid rgb(125, 158, 132);
+        width: 170px;
+        height: 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        border-style: none;
+        margin-left: 3%;
+    }
+    #formulario .formulario__preguntas .botones button{
+        width: 73px;
+        height: 30px;
+    }
+    #formulario .formulario__preguntas .botones button:hover{
+        background-color: rgb(125, 158, 132);  
+    }
+    #formulario__mapa{
+        width: 500px;
+        height: 450px;
+        float: right;
+        margin-top: -50px;
+        margin-right: 0px;
+    }
+    #formulario .formulario__telefono{
+        margin-top: 10px;
+        margin-left: 100px;
+        font-size: 20px;
+        float: left;
+    }
+
+
     /* QUIENES SOMOS */
     #section__QuienesSomos {
         width: 100%;
         display: flex;
-        height: 100vh;
         padding: 40px;
         background-color: rgb(125, 158, 132);
     }
     #section__QuienesSomos .QuienesSomos__text {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         font-size: 20px;
         line-height: 1.5;
         text-align: justify;
@@ -142,61 +260,20 @@
     }
     /* BOTON DE SUBIR */
 
-    .ir-top-container {
-        position: fixed;
-        bottom: 4rem;
-        right: 4rem;
-        width: 6.6rem;
-        height: 6.6rem;
-        z-index: -1;
-    }
-    .ir-top-button{    
-        width: 0rem;
-        height: 0rem;
+    #ir-top {
+        width: 70px;
+        height: 70px;
         background: rgb(125, 158, 132);
-        border-radius: 50%;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         cursor: pointer;
-        transition: .2s;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-    }
-    .ir-top-container .ir-top-button i {
-        position: absolute;
-        font-size: 1.7rem;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        color: red;
-        transition: .2s;
-    }
-    .show {
-        z-index: 10;
-    }
-    .show .ir-top-button {
-        animation: popup .3s ease-in-out;
-        width: 6.6rem;
-        height: 6.6rem;
-        z-index: 11;
-    }
-    .show i {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    @keyframes popup{
-        0%{
-            width: 0rem;
-            height: 0rem;
-        }
-        50%{
-            width: 8rem;
-            height: 8rem;
-        }
-        100%{
-            width: 6.6rem;
-            height: 6.6rem;
-        }
-        
+        display: none;
     }
 
 
@@ -205,6 +282,7 @@
     #pie-pagina {
         width: 100%;
         background-color: rgb(0, 0, 0);
+        z-index: 1;
     }
     #pie-pagina .grupo-1 {
         width: 100%;
@@ -337,7 +415,7 @@
     #section {
         width: 100%;
         height: 400px;
-        background-color: rgb(146, 27, 27);
+        background-color: rgb(125, 158, 132);
         display: flex;
         position: sticky;          
     }
@@ -383,6 +461,36 @@
         padding-left: 5%;
         font-size: 30px;
     }
+    /* QUIENES SOMOS */
+    #section__QuienesSomos {
+        width: 100%;
+        display: flex;
+        
+        padding: 40px;
+        background-color: rgb(125, 158, 132);
+    }
+    #section__QuienesSomos .QuienesSomos__text {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    #section__QuienesSomos .QuienesSomos__text img {
+        width: 250px;  
+        border-radius: 5px;
+        float: left;
+        margin-right: 15px;
+    }    
+    #section__QuienesSomos .QuienesSomos__text h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #section__QuienesSomos .QuienesSomos__text p {
+        text-indent: 2%;
+    }
+    
  
 
     /*FOOTER */
@@ -453,5 +561,19 @@
     #pie-pagina .grupo-2 small{
         font-size: 15px;
     }
-
+    #ir-top {
+        width: 70px;
+        height: 70px;
+        background: rgb(125, 158, 132);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+    }
 }

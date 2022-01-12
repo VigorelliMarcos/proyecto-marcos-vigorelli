@@ -1,9 +1,11 @@
-window.onscroll = function(){ 
-    if(document.documentElement.scrollTop > 100){
-        document.querySelector(".ir-top-container").classList.add("show");
-    }else{(document.documentElement.scrollTop > 100){
-        document.querySelector(".ir-top-container").classList.remove("show");
-
+let caja=document.getElementById("ir-top");
+caja.addEventListener("click",function(){
+    document.documentElement.scrollTop=0;
+})
+window.addEventListener("scroll",function(){
+    if (document.documentElement.scrollTop > 0) {
+        caja.style.display="flex"
+    } else {
+        caja.style.display="none"
     }
-
-} 
+})
