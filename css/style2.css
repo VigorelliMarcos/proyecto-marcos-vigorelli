@@ -11,7 +11,9 @@
 
 @media(min-width:1040.1px) {
     
-  /* header */
+
+/* header */
+
 
     #header {
         width: 100%;
@@ -59,7 +61,34 @@
         display: none;
     }
 
+
+    #rectangulo {
+        width: 100%;
+        height: 10px;
+        background-color: rgb(125, 158, 132);
+
+    }
+    .rectangulo-animacion {
+        width: 50px;
+        height: 10px;
+        background: gray;
+        animation-name: mianimacion;
+        animation-duration: 5s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes mianimacion {
+        0%{background: gray; left: 0%;}
+        25%{background: gray; left: 25%;}
+        50%{background: gray; left: 50%;}
+        75%{background: gray; left: 75%;}
+        100%{background: gray; left: 96%;}
+    }
+
+
     /* section */
+
 
     #quienes-somos {
         width: 100%;
@@ -87,26 +116,27 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 26px;
+        padding-right: 45px;
     }
     #quienes-somos .grupo-1-QS .box-2-QS h2{
         color: rgb(0, 0, 0);
         margin-bottom: 30px;
         text-align: center;
-        width: 90%;
+        width: 100%;
+        margin-top: 26px;
+        font-size: 35px;
     }
-
     #quienes-somos .grupo-1-QS .box-2-QS p{
         font-size: 25px;
         text-indent: 30px;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
 
+    /* TRABAJO */
 
-    /* trabajo */
-
+    
     #trabajo {
         width: 100%;
         background: rgb(255, 230, 168);
@@ -141,7 +171,6 @@
         text-align: center;
         width: 100%;
     }
-
     #trabajo .grupo-1-trabajo .box-2-trabajo .l1 {
         font-size: 25px;
         text-indent: 30px;
@@ -150,12 +179,8 @@
     }
 
 
+    /* COMUNICACION */
 
-
-
-
-
-    /* comunicacion */
 
     #formulario {
         width: 100%;
@@ -221,7 +246,6 @@
     #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input:hover{
         background-color: rgb(125, 158, 132);  
     }
-
     #formulario .grupo-1_form .box-form .formulario__conteiner-2 {
         width: 100%;
         display: flex;
@@ -243,6 +267,8 @@
 
 
     /* QUIENES SOMOS */
+
+
     #section__QuienesSomos {
         width: 100%;
         display: flex;
@@ -254,7 +280,6 @@
         height: 100%;
         font-size: 20px;
         line-height: 1.5;
-        
     }
     #section__QuienesSomos .QuienesSomos__text img {
         width: 500px;  
@@ -270,11 +295,60 @@
     #section__QuienesSomos .QuienesSomos__text p {
         text-indent: 2%;
     }
+
+    
+    /*PAGINA OBRAS REALIZADAS*/
+    
+    
+    #section-obrasRealizadas .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 450px;
+        padding: 30px;
+        grid-gap: 20px;
+        background-color: rgb(0, 0, 0);
+    }     
+    #section-obrasRealizadas h2 {
+       width: 100%;
+       text-align: center;
+       background: rgb(125, 158, 132);
+    }  
+    #section-obrasRealizadas .galeria-container img {
+        width: 100%;
+        object-fit: cover;
+       height: 100%;
+    }  
+    #section-obrasRealizadas .galeria-item{
+        opacity: 35%;
+        cursor: pointer;
+        transition: 2s;
+    }
+    #section-obrasRealizadas .galeria-item:hover{
+        opacity: 100%;
+    }
+    #section-obrasRealizadas .galeria-item:nth-child(1) {
+        grid-column-start: span 2;
+    } 
+    #section-obrasRealizadas .galeria-item:nth-child(5) {
+        grid-column-start: span 2;
+    } 
+    #section-obrasRealizadas .galeria-item:nth-child(4) {
+        grid-column-start: span 2;
+    } 
+    #section-obrasRealizadas .galeria-item:nth-child(8) {
+        grid-column-start: span 2;
+    } 
+    #section-obrasRealizadas .galeria-item:nth-child(9) {
+        grid-column-start: span 2;
+    }
+    
+    
     /* BOTON DE SUBIR */
 
+    
     #ir-top {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background: rgb(125, 158, 132);
         color: rgb(0, 0, 0);
         display: flex;
@@ -286,11 +360,14 @@
         right: 20px;
         cursor: pointer;
         display: none;
+        border-radius: 50%;
+        transition: .4s;
     }
-
+    
 
     /*FOOTER */
-
+    
+    
     #pie-pagina {
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -357,13 +434,10 @@
     }
 
 
-
-
-
-
 }
 @media(max-width:1040px) {
     
+
     #header {
         width: 100%;
         height: 120px;
@@ -423,8 +497,8 @@
     }
 
 
-
     /* section */
+
 
     #quienes-somos {
         width: 100%;
@@ -459,7 +533,6 @@
         margin-bottom: 30px;
         text-align: center;
     }
-
     #quienes-somos .grupo-1-QS .box-2-QS p{
         font-size: 25px;
         text-indent: 30px;
@@ -467,11 +540,14 @@
         margin-left: 40px;
         margin-right: 40px
     }
+
+
     /* QUIENES SOMOS */
+
+
     #section__QuienesSomos {
         width: 100%;
         display: flex;
-        
         padding: 40px;
         background-color: rgb(125, 158, 132);
     }
@@ -496,7 +572,9 @@
         text-indent: 2%;
     }
 
-        /* trabajo */
+
+    /* TRABAJO */
+
 
     #trabajo {
         width: 100%;
@@ -532,7 +610,6 @@
         text-align: center;
         width: 100%;
     }
-
     #trabajo .grupo-1-trabajo .box-2-trabajo .l1 {
         font-size: 25px;
         text-indent: 30px;
@@ -541,95 +618,146 @@
     }
 
 
+    /* COMUNICACION */
 
 
-        /* comunicacion */
-
-        #formulario {
-            width: 100%;
-            background: rgb(125, 158, 132);
-        }
-        #formulario .grupo-1_form {
-            width: 100%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding: 45px 0px;
-        }
-        #formulario .grupo-1_form .box-form-2 {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #formulario__mapa{
-            width: 70%;
-            height: 100%;
-        }
-        #formulario .grupo-1_form .box-form h2{
-            color: rgb(0, 0, 0);
-            margin-bottom: 25px;
-            text-align: center;    
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner {
-            width: 100%;
-            background-color: rgb(125, 158, 132);
-            text-align: center;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas {
-            display: inline-block;
-            background-color: rgb(255, 230, 168);
-            width: 300px;
-            height: 415px;
-            border-radius: 15px;
-            padding-top: 2%;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div input{
-            border-style: none;
-            border-bottom: 1px solid black;
-            width: 90%;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div textarea{
-            resize: none;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones{
-            border: 1px solid rgb(125, 158, 132);
-            width: 100%;
-            height: 30px;
-            font-size: 16px;
-            border-radius: 4px;
-            border-style: none;
-            text-align: center;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input{
-            width: 50%;
-            transition: all 300ms ease;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input:hover{
-            background-color: rgb(125, 158, 132);  
-        }
+    #formulario {
+        width: 100%;
+        background: rgb(125, 158, 132);
+    }
+    #formulario .grupo-1_form {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 45px 0px;
+    }
+    #formulario .grupo-1_form .box-form-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #formulario__mapa{
+        width: 70%;
+        height: 100%;
+    }
+    #formulario .grupo-1_form .box-form h2{
+        color: rgb(0, 0, 0);
+        margin-bottom: 25px;
+        text-align: center;    
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner {
+        width: 100%;
+        background-color: rgb(125, 158, 132);
+        text-align: center;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas {
+        display: inline-block;
+        background-color: rgb(255, 230, 168);
+        width: 300px;
+        height: 415px;
+        border-radius: 15px;
+        padding-top: 2%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div input{
+        border-style: none;
+        border-bottom: 1px solid black;
+        width: 90%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas div textarea{
+        resize: none;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones{
+        border: 1px solid rgb(125, 158, 132);
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        border-style: none;
+        text-align: center;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input{
+        width: 50%;
+        transition: all 300ms ease;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner .formulario__preguntas .botones input:hover{
+        background-color: rgb(125, 158, 132);  
+    }
     
-        #formulario .grupo-1_form .box-form .formulario__conteiner-2 {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-top: 26px;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono  {
-            width: 75%;
-            height: 100%;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono h3{
-            text-align: center;
-            font-size: 25px;
-        }
-        #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono p{
-            text-align: center;
-            font-size: 20px;
-        }
+     #formulario .grupo-1_form .box-form .formulario__conteiner-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 26px;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono  {
+        width: 75%;
+        height: 100%;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    #formulario .grupo-1_form .box-form .formulario__conteiner-2 .formulario__telefono p{
+        text-align: center;
+        font-size: 20px;
+    }
     
- 
+
+    /*PAGINA OBRAS REALIZADAS*/
+    
+    
+    #section-obrasRealizadas .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 350px;
+        padding: 30px;
+        grid-gap: 20px;
+        background-color: rgb(0, 0, 0);
+    }     
+    #section-obrasRealizadas h2 {
+       width: 100%;
+       text-align: center;
+       background: rgb(125, 158, 132);
+    }  
+    #section-obrasRealizadas .galeria-container img {
+        width: 100%;
+        object-fit: cover;
+       height: 100%;
+    }  
+    #section-obrasRealizadas .galeria-item{
+        opacity: 35%;
+        cursor: pointer;
+        transition: 2s;
+    }
+    #section-obrasRealizadas .galeria-item:hover{
+        opacity: 100%;
+    }
+    
+
+    /* BOTON DE SUBIR */
+
+
+    #ir-top {
+        width: 70px;
+        height: 70px;
+        background: rgb(125, 158, 132);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    
 
     /*FOOTER */
 
@@ -699,21 +827,6 @@
     #pie-pagina .grupo-2 small{
         font-size: 15px;
     }
-    #ir-top {
-        width: 70px;
-        height: 70px;
-        background: rgb(125, 158, 132);
-        color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer;
-        display: none;
-    }
 }
 
 
@@ -731,4 +844,5 @@
         margin-right: 0px;
     }    
 
+    
 }    
