@@ -12,7 +12,7 @@
 @media(min-width:1040.1px) {
     
 
-/* header */
+    /* HEADER TODAS LAS PAGINAS */
 
 
     #header {
@@ -62,11 +62,13 @@
     }
 
 
+    /* RECTANGULO DE TODAS LAS PAGINAS */  
+
+
     #rectangulo {
         width: 100%;
         height: 10px;
         background-color: rgb(125, 158, 132);
-
     }
     .rectangulo-animacion {
         width: 50px;
@@ -87,7 +89,98 @@
     }
 
 
-    /* section */
+    /* BOTON DE SUBIR DE TODAS LAS PAGINAS */
+
+    
+    #ir-top {
+        width: 60px;
+        height: 60px;
+        background: rgb(43, 116, 150);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    
+
+    /* FOOTER DE TODAS LAS PAGINAS */
+    
+    
+    #pie-pagina {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+    }
+    #pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+    #pie-pagina .grupo-1 .box .img-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pie-pagina .grupo-1 .box .img-footer img{
+        width: 250px;
+    }
+    #pie-pagina .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;    
+    }
+    #pie-pagina .grupo-1 .box .paginas-sitio {
+        display: inline-block;
+    }
+    #pie-pagina .grupo-1 .box .paginas-sitio a{
+        display: block;
+        color: #efefef;
+        margin-bottom: 5px;
+        transition: all 500ms ease;
+    }
+    #pie-pagina .grupo-1 .box .paginas-sitio a:hover{
+        background-color: rgb(125, 158, 132);
+    }
+    #pie-pagina .grupo-1 .box .red-social a{
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;    
+        background-color: rgb(34, 27, 27);
+        text-align: center;
+        transition: all 300ms ease;
+    }
+    #pie-pagina .grupo-1 .box .red-social a:hover {
+        color: rgb(125, 158, 132);
+    }
+    #pie-pagina .grupo-2 {
+        background-color: black;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+    #pie-pagina .grupo-2 small{
+        font-size: 15px;
+    }
+    
+
+    /* QUIENES SOMOS (PAGINA INDEX) */
 
 
     #quienes-somos {
@@ -134,7 +227,7 @@
     }
 
 
-    /* TRABAJO */
+    /* TRABAJO (PAGINA INDEX) */
 
     
     #trabajo {
@@ -161,25 +254,31 @@
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo {
         width: 100%;
-        /* display: flex; */
         justify-content: center;
-        margin-top: 26px;
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo h2{
         color: rgb(0, 0, 0);
-        margin-bottom: 30px;
         text-align: center;
         width: 100%;
+        font-size: 35px;
+        margin-top: 26px;
+        margin-bottom: 30px;
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo .l1 {
-        font-size: 25px;
+        font-size: 30px;
         text-indent: 30px;
         width: 100%;
         text-align: center;
+        margin-bottom: 30px;
+    }
+    #trabajo .grupo-1-trabajo .box-2-trabajo .l1 p {
+        font-size: 20px;
+        text-indent: 30px;
+        width: 100%;
     }
 
 
-    /* COMUNICACION */
+    /* COMUNICACION (PAGINA INDEX)/ PAGINA CONTACTO */
 
 
     #formulario {
@@ -266,7 +365,7 @@
     }
 
 
-    /* QUIENES SOMOS */
+    /* PAGINA QUIENES SOMOS */
 
 
     #section__QuienesSomos {
@@ -297,7 +396,7 @@
     }
 
     
-    /*PAGINA OBRAS REALIZADAS*/
+    /* PAGINA OBRAS REALIZADAS */
     
     
     #section-obrasRealizadas .galeria-container {
@@ -341,102 +440,14 @@
     #section-obrasRealizadas .galeria-item:nth-child(9) {
         grid-column-start: span 2;
     }
-    
-    
-    /* BOTON DE SUBIR */
-
-    
-    #ir-top {
-        width: 60px;
-        height: 60px;
-        background: rgb(125, 158, 132);
-        color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer;
-        display: none;
-        border-radius: 50%;
-        transition: .4s;
-    }
-    
-
-    /*FOOTER */
-    
-    
-    #pie-pagina {
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-        z-index: 1;
-    }
-    #pie-pagina .grupo-1 {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0px;
-    }
-    #pie-pagina .grupo-1 .box .img-footer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #pie-pagina .grupo-1 .box .img-footer img{
-        width: 250px;
-    }
-    #pie-pagina .grupo-1 .box h2{
-        color: #fff;
-        margin-bottom: 25px;
-        font-size: 20px;    
-    }
-    #pie-pagina .grupo-1 .box .paginas-sitio {
-        display: inline-block;
-    }
-    #pie-pagina .grupo-1 .box .paginas-sitio a{
-        display: block;
-        color: #efefef;
-        margin-bottom: 5px;
-        transition: all 500ms ease;
-    }
-    #pie-pagina .grupo-1 .box .paginas-sitio a:hover{
-        background-color: rgb(125, 158, 132);
-    }
-    #pie-pagina .grupo-1 .box .red-social a{
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: #fff;
-        margin-right: 10px;    
-        background-color: rgb(34, 27, 27);
-        text-align: center;
-        transition: all 300ms ease;
-    }
-    #pie-pagina .grupo-1 .box .red-social a:hover {
-        color: rgb(125, 158, 132);
-    }
-    #pie-pagina .grupo-2 {
-        background-color: black;
-        padding: 15px 10px;
-        text-align: center;
-        color: #fff;
-    }
-    #pie-pagina .grupo-2 small{
-        font-size: 15px;
-    }
-
-
 }
+
+
 @media(max-width:1040px) {
     
+
+    /* HEADER TODAS LAS PAGINAS */
+
 
     #header {
         width: 100%;
@@ -496,8 +507,127 @@
         display: block;
     }
 
+    
+    /* BOTON DE SUBIR */
 
-    /* section */
+
+    #ir-top {
+        width: 70px;
+        height: 70px;
+        background: rgb(43, 116, 150);
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+        border-radius: 50%;
+        transition: .4s;
+    }
+    
+
+    /* FOOTER TODAS LAS PAGINAS */
+
+
+    #pie-pagina {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    #pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    #pie-pagina .grupo-1 .box .img-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pie-pagina .grupo-1 .box .img-footer img{
+        width: 250px;
+    }
+    #pie-pagina .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;  
+        text-align: center;  
+    }
+    #pie-pagina .grupo-1 .box .paginas-sitio {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    #pie-pagina .grupo-1 .box .paginas-sitio a{
+        display: block;
+        color: #efefef;
+        margin-bottom: 5px;
+    }
+    #pie-pagina .grupo-1 .box .red-social {
+        text-align: center;
+    }
+    #pie-pagina .grupo-1 .box .red-social a{
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;    
+        background-color: rgb(34, 27, 27);
+        text-align: center;
+        transition: all 300ms ease;
+    }
+    #pie-pagina .grupo-1 .box .red-social a:hover {
+        color: rgb(125, 158, 132);
+    }
+    #pie-pagina .grupo-2 {
+        background-color: black;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+    #pie-pagina .grupo-2 small{
+        font-size: 15px;
+    }
+
+
+    /* RECTANGULO DE TODAS LAS PAGINAS */  
+
+
+    #rectangulo {
+        width: 100%;
+        height: 10px;
+        background-color: rgb(125, 158, 132);
+    }
+    .rectangulo-animacion {
+        width: 50px;
+        height: 10px;
+        background: gray;
+        animation-name: mianimacion;
+        animation-duration: 5s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes mianimacion {
+        0%{background: gray; left: 0%;}
+        25%{background: gray; left: 25%;}
+        50%{background: gray; left: 50%;}
+        75%{background: gray; left: 75%;}
+        100%{background: gray; left: 96%;}
+    }
+
+
+    /* QUIENES SOMOS (PAGINA INDEX) */
 
 
     #quienes-somos {
@@ -542,38 +672,7 @@
     }
 
 
-    /* QUIENES SOMOS */
-
-
-    #section__QuienesSomos {
-        width: 100%;
-        display: flex;
-        padding: 40px;
-        background-color: rgb(125, 158, 132);
-    }
-    #section__QuienesSomos .QuienesSomos__text {
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-        line-height: 1.5;
-    }
-    #section__QuienesSomos .QuienesSomos__text img {
-        width: 250px;  
-        border-radius: 5px;
-        float: left;
-        margin-right: 15px;
-    }    
-    #section__QuienesSomos .QuienesSomos__text h2 {
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    #section__QuienesSomos .QuienesSomos__text p {
-        text-indent: 2%;
-    }
-
-
-    /* TRABAJO */
+    /* TRABAJO (PAGINA INDEX) */
 
 
     #trabajo {
@@ -600,25 +699,31 @@
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo {
         width: 100%;
-        /* display: flex; */
         justify-content: center;
-        margin-top: 26px;
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo h2{
         color: rgb(0, 0, 0);
-        margin-bottom: 30px;
         text-align: center;
         width: 100%;
+        font-size: 35px;
+        margin-top: 26px;
+        margin-bottom: 30px;
     }
     #trabajo .grupo-1-trabajo .box-2-trabajo .l1 {
-        font-size: 25px;
+        font-size: 30px;
         text-indent: 30px;
         width: 100%;
         text-align: center;
+        margin-bottom: 30px;
+    }
+    #trabajo .grupo-1-trabajo .box-2-trabajo .l1 p {
+        font-size: 20px;
+        text-indent: 30px;
+        width: 100%;
     }
 
 
-    /* COMUNICACION */
+    /* COMUNICACION (PAGINA INDEX)/ PAGINA CONTACTO */
 
 
     #formulario {
@@ -706,6 +811,37 @@
     }
     
 
+    /* PAGINA QUIENES SOMOS */
+
+
+    #section__QuienesSomos {
+        width: 100%;
+        display: flex;
+        padding: 40px;
+        background-color: rgb(125, 158, 132);
+    }
+    #section__QuienesSomos .QuienesSomos__text {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    #section__QuienesSomos .QuienesSomos__text img {
+        width: 250px;  
+        border-radius: 5px;
+        float: left;
+        margin-right: 15px;
+    }    
+    #section__QuienesSomos .QuienesSomos__text h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #section__QuienesSomos .QuienesSomos__text p {
+        text-indent: 2%;
+    }
+
+
     /*PAGINA OBRAS REALIZADAS*/
     
     
@@ -735,98 +871,6 @@
     #section-obrasRealizadas .galeria-item:hover{
         opacity: 100%;
     }
-    
-
-    /* BOTON DE SUBIR */
-
-
-    #ir-top {
-        width: 70px;
-        height: 70px;
-        background: rgb(125, 158, 132);
-        color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer;
-        display: none;
-        border-radius: 50%;
-        transition: .4s;
-    }
-    
-
-    /*FOOTER */
-
-
-    #pie-pagina {
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-    }
-    #pie-pagina .grupo-1 {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-    #pie-pagina .grupo-1 .box .img-footer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #pie-pagina .grupo-1 .box .img-footer img{
-        width: 250px;
-    }
-    #pie-pagina .grupo-1 .box h2{
-        color: #fff;
-        margin-bottom: 25px;
-        font-size: 20px;  
-        text-align: center;  
-    }
-    #pie-pagina .grupo-1 .box .paginas-sitio {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-    #pie-pagina .grupo-1 .box .paginas-sitio a{
-        display: block;
-        color: #efefef;
-        margin-bottom: 5px;
-    }
-    #pie-pagina .grupo-1 .box .red-social {
-        text-align: center;
-    }
-    #pie-pagina .grupo-1 .box .red-social a{
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: #fff;
-        margin-right: 10px;    
-        background-color: rgb(34, 27, 27);
-        text-align: center;
-        transition: all 300ms ease;
-    }
-    #pie-pagina .grupo-1 .box .red-social a:hover {
-        color: rgb(125, 158, 132);
-    }
-    #pie-pagina .grupo-2 {
-        background-color: black;
-        padding: 15px 10px;
-        text-align: center;
-        color: #fff;
-    }
-    #pie-pagina .grupo-2 small{
-        font-size: 15px;
-    }
 }
 
 
@@ -843,6 +887,4 @@
         border-radius: 5px;
         margin-right: 0px;
     }    
-
-    
 }    
