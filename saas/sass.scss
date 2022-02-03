@@ -8,18 +8,35 @@
     scroll-behavior: smooth;
 }
 
-#header {
+@mixin wit {
     width: 100%;
+    display: flex;
+}
+
+$reds: (
+    twitter: lightblue, 
+    facebook: blue,
+    instagram: pink,
+    youtube: red,
+
+);
+@each $nombre in $valor in $reds {
+    .red-social #{$nombre} {
+        background-color: $valor;
+    }   
+}
+
+
+#header {
+    @include wit;
     height: 120px;
     background-color: rgb(0, 0, 0);
-    display: flex;
     position: sticky;
     top: 0;
     z-index: 800;
     & .nav {
+        @include wit;
         height: 100%;
-        width: 100%;
-        display: flex;
         justify-content: space-between;
         align-items: center;
         .bar-btn {
@@ -46,7 +63,7 @@
         }
     }
     #check {
-        display: none;
+        @extend .bar-btn;
     }
     & .logo {
         margin-left: 20px;
@@ -87,9 +104,8 @@
         padding: 45px 0px;
         & .box {
             & .img-footer {
-                width: 100%;
+                @include wit;
                 height: 100%;
-                display: flex;
                 justify-content: center;
                 align-items: center;
                 img {
@@ -153,8 +169,7 @@
 
 
 #section__QuienesSomos {
-    width: 100%;
-    display: flex;
+    @include wit;
     padding: 40px;
     background-color: rgb(125, 158, 132);
     & .QuienesSomos__text {
