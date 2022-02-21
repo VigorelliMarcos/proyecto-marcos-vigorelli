@@ -5,7 +5,7 @@
           box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -37,20 +37,20 @@
           align-items: center;
 }
 
-#header .nav-menu {
+#header .nav .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
 
-#header .nav-menu li {
+#header .nav .nav-menu li {
   display: block;
   line-height: 30px;
   margin: auto;
 }
 
-#header .nav-menu li a {
+#header .nav .nav-menu li a {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
   transition: all 500ms ease;
 }
 
-#header .nav-menu li a:hover {
+#header .nav .nav-menu li a:hover {
   background-color: #7d9e84;
 }
 
@@ -162,8 +162,8 @@
   cursor: pointer;
   display: none;
   border-radius: 50%;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* FOOTER DE TODAS LAS PAGINAS */
@@ -292,6 +292,7 @@
 #quienes-somos .grupo-1-QS .box-1-QS img {
   width: 80%;
   height: 100%;
+  border-radius: 5%;
 }
 
 #quienes-somos .grupo-1-QS .box-2-QS {
@@ -357,6 +358,7 @@
 #trabajo .grupo-1-trabajo .box-1-trabajo img {
   width: 80%;
   height: 100%;
+  border-radius: 5%;
 }
 
 #trabajo .grupo-1-trabajo .box-2-trabajo {
@@ -499,6 +501,7 @@
 #formulario .grupo-1_form .box-form-2 #formulario__mapa {
   width: 70%;
   height: 100%;
+  border-radius: 5%;
 }
 
 /* PAGINA SERVICIOS */
@@ -552,7 +555,7 @@
 
 #section__QuienesSomos .QuienesSomos__text .QuienesSomos__img img {
   width: 500px;
-  border-radius: 5px;
+  border-radius: 5%;
   float: left;
   margin-right: 15px;
 }
@@ -628,31 +631,50 @@
       grid-column-start: span 2;
 }
 
-@media (max-width: 1440px) {
-  #header {
-    width: 100%;
-    height: 120px;
-    background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 800;
+@media screen and (max-width: 1440px) {
+  @-webkit-keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    100% {
+      background: gray;
+      left: 100%;
+    }
   }
-  #header .nav {
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  @keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    100% {
+      background: gray;
+      left: 100%;
+    }
   }
   #header .nav .bar-btn {
     font-size: 25px;
@@ -668,24 +690,14 @@
     top: 118px;
     background: rgba(0, 0, 0, 0.912);
     text-align: center;
-    -webkit-transition: all .05s;
-    transition: all .05s;
+    -webkit-transition: all 0.05s;
+    transition: all 0.05s;
   }
   #header .nav .nav-menu li {
     display: none;
-    line-height: 30px;
     margin: 50px 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  #header .nav .nav-menu li a {
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  #header #check {
-    display: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   #header #check:checked ~ .nav-menu {
     height: 435px;
@@ -694,143 +706,36 @@
   #header #check:checked ~ .nav-menu li {
     display: block;
   }
-  #header .logo {
-    margin-left: 20px;
-    margin-top: 10px;
-  }
   /* FOOTER DE TODAS LAS PAGINAS */
-  #pie-pagina {
-    width: 100%;
-    background-color: black;
-  }
   #pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
   }
-  #pie-pagina .grupo-1 .box .img-footer {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #pie-pagina .grupo-1 .box .img-footer img {
-    width: 250px;
-  }
   #pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
     text-align: center;
   }
   #pie-pagina .grupo-1 .box .paginas-sitio {
     width: 100%;
-    display: inline-block;
     text-align: center;
-  }
-  #pie-pagina .grupo-1 .box .paginas-sitio a {
-    display: block;
-    color: #efefef;
-    margin-bottom: 5px;
-  }
-  #pie-pagina .grupo-1 .box .paginas-sitio a:hover {
-    background-color: #7d9e84;
-  }
-  #pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
   }
   #pie-pagina .grupo-1 .box .red-social {
     text-align: center;
   }
-  #pie-pagina .grupo-1 .box .red-social a {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #221b1b;
-    text-align: center;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-  }
-  #pie-pagina .grupo-1 .box .red-social a:hover {
-    color: #7d9e84;
-  }
-  #pie-pagina .grupo-2 {
-    background-color: black;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  #pie-pagina .grupo-2 small {
-    font-size: 15px;
-  }
   /* QUIENES SOMOS (PAGINA INDEX) */
-  #quienes-somos {
-    width: 100%;
-    background: #7d9e84;
-  }
   #quienes-somos .grupo-1-QS {
-    width: 100%;
-    margin: auto;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding: 45px 0px;
-  }
-  #quienes-somos .grupo-1-QS .box-1-QS {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #quienes-somos .grupo-1-QS .box-1-QS img {
-    width: 80%;
-    height: 100%;
   }
   #quienes-somos .grupo-1-QS .box-2-QS {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-top: 26px;
   }
   #quienes-somos .grupo-1-QS .box-2-QS h2 {
-    color: black;
     margin-bottom: 30px;
     text-align: center;
   }
   #quienes-somos .grupo-1-QS .box-2-QS p {
-    font-size: 25px;
-    text-indent: 30px;
-    text-align: center;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -849,7 +754,11 @@
   }
   /* PAGINA QUIENES SOMOS */
   #section__QuienesSomos .QuienesSomos__text .QuienesSomos__img img {
-    width: 250px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #section__QuienesSomos .QuienesSomos__text h2 {
+    font-size: 25px;
   }
   /* PAGINA OBRAS REALIZADAS */
   #section-obrasRealizadas .galeria-container {
@@ -898,8 +807,8 @@
             align-items: center;
   }
   #section__QuienesSomos .QuienesSomos__text .QuienesSomos__img img {
-    width: 250px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 5%;
     margin-right: 0px;
   }
   /* PAGINA OBRAS REALIZADAS */
@@ -947,6 +856,123 @@
   #section-obrasRealizadas .galeria-item:nth-child(10) {
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+  }
+}
+
+@keyframes mianimacion {
+  0% {
+    background: gray;
+    left: 0%;
+  }
+  25% {
+    background: gray;
+    left: 25%;
+  }
+  50% {
+    background: gray;
+    left: 50%;
+  }
+  75% {
+    background: gray;
+    left: 75%;
+  }
+  90% {
+    background: gray;
+    left: 91%;
+  }
+}
+
+@media (max-width: 554px) {
+  @-webkit-keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    90% {
+      background: gray;
+      left: 88%;
+    }
+  }
+  @keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    90% {
+      background: gray;
+      left: 88%;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  @-webkit-keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    90% {
+      background: gray;
+      left: 83%;
+    }
+  }
+  @keyframes mianimacion {
+    0% {
+      background: gray;
+      left: 0%;
+    }
+    25% {
+      background: gray;
+      left: 25%;
+    }
+    50% {
+      background: gray;
+      left: 50%;
+    }
+    75% {
+      background: gray;
+      left: 75%;
+    }
+    90% {
+      background: gray;
+      left: 83%;
+    }
   }
 }
 /*# sourceMappingURL=sass.css.map */
